@@ -26,7 +26,7 @@ This app provides the following routes:
 - A view of submissions since last restart for debugging: '/submissions'
 - A route for creating a submission: '/create/post'
 
-A well formed JSON request must be used for the app:
+A well formed JSON request must be used for the app and is illustrated with the included tester script:
 ```
 url = 'http://localhost:8090/create/post
 
@@ -40,6 +40,9 @@ headers = {'Content-Type': 'application/json'}
 r = requests.post(url, data=json.dumps(data), headers=headers)
 ```
 Please refer to the official [MiTrend API](http://mitrend.com/#api) specification for what's possible in the data fields.
+
+## Deployment
+Cloud Foundry ```Procfile``` and ```requirements.txt``` files are included for CF deployment via CLI
 
 ## Contribution
 Create a fork of the project into your own reposity. Make all your necessary changes and create a pull request with a description on what was added or removed and details explaining the changes in lines of code. If approved, project owners will merge it.
