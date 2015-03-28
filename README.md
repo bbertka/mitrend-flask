@@ -8,6 +8,8 @@ The following use cases are supported by this app:
 - A tool chain can benefit from the simplicity of submitting a single JSON request instead of three
 - A microservice is required to submit [MiTrend](http://mitrend.com) assessments
 
+See a Cloud Foundry demo at: [http://mitrend-api.cfapps.io/](http://mitrend-api.cfapps.io)
+
 ## Installation
 To install just clone from git and run:
 ```
