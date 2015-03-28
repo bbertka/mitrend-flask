@@ -43,8 +43,8 @@ def app_create():
 		files=input['files'] )
 	except Exception as e:
 		raise
-	M.create_submission()
-	M.add_files()
+	M.create()
+	M.add()
 	M.submit()
 	SUBMISSIONS.append( M.submission )
 
